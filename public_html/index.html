@@ -14,15 +14,26 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <style>
+            html {
+                box-sizing: border-box;
+            }
+            *, *:before, *:after {
+                box-sizing: inherit;
+            }
             body {
                 position: relative;
             }
-        </style>
-        <style>
-            /* Make the image fully responsive */
+
+            @media (max-width: 700px){
+                h1,p {
+                    font-size: larger;
+                }
+                
+            }
+
             .carousel-inner img {
-                width: 90%;
-                margin:auto;
+                width: 100%;
+                height: 35em;
             }
         </style>
     </head>
@@ -57,7 +68,7 @@
                 </ul>
             </div>
         </nav>
-        <div id="inicio" class="container-fluid bg-light">
+        <div id="inicio" class="container-fluid bg-light" style="padding-top:100px;">
             <div id="demo" class="carousel slide" data-ride="carousel">
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -68,31 +79,31 @@
                 <center>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./img/msg.jpg" alt="mensajeria" width="600" height="500">
+                            <img src="./img/msg.jpg" alt="mensajeria" width="600" height="500" class="img-fluid">
                             <div class="carousel-caption">
-                                <h1 class="display-3 text-info bg-dark">Distribución de mensajería</h1>
-                                <p class="display-5"><mark>Tenemos asociados a sus necesidades de mensajería y paquetería</mark></p>
+                                <h1 class="text-info bg-dark">Distribución de mensajería</h1>
+                                <p><mark>Tenemos asociados a sus necesidades de mensajería y paquetería</mark></p>
                             </div>   
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/alestra.jpg" alt="alestra" width="600" height="500">
+                            <img src="./img/alestra.jpg" alt="alestra" width="600" height="500" class="img-fluid">
                             <div class="carousel-caption">
-                                <h1 class="display-3 text-warning bg-dark">Servicios de Alestra</h1>
-                                <p class="display-5"><mark>Somos distribuidores autorizados de Alestra</mark></p>
+                                <h1 class="text-warning bg-dark">Servicios de Alestra</h1>
+                                <p><mark>Somos distribuidores autorizados de Alestra</mark></p>
                             </div>   
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/mantenimiento.jpg" alt="ups" width="600" height="500">
+                            <img src="./img/mantenimiento.jpg" alt="ups" width="600" height="500" class="img-fluid">
                             <div class="carousel-caption">
-                                <h1 class="display-3 text-info bg-dark">Mantenimiento de UPS</h1>
-                                <p class="display-5"><mark>Cuidamos de su equipo UPS</mark></p>
+                                <h1 class="text-info bg-dark">Mantenimiento de UPS</h1>
+                                <p><mark>Cuidamos de su equipo UPS</mark></p>
                             </div>   
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/plantaemer.jpg" alt="emergencia" width="600" height="500">
+                            <img src="./img/plantaemer.jpg" alt="emergencia" width="600" height="500" class="img-fluid">
                             <div class="carousel-caption">
-                                <h1 class="display-3 text-warning bg-dark">Mantenimiento de plantas de emergencia</h1>
-                                <p class="display-5"><mark>Todo para mantener funcional a sus plantas</mark></p>
+                                <h1 class="text-warning bg-dark">Mantenimiento de plantas de emergencia</h1>
+                                <p><mark>Todo para mantener funcional a sus plantas</mark></p>
                             </div>   
                         </div>              
                     </div>
@@ -105,7 +116,7 @@
                 </a>
             </div>
         </div>
-        <div id="somos" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:200px">
+        <div id="somos" class="container-fluid bg-light" style="padding-top:50px;padding-bottom:200px">
             <h1 class="display-4 text-center">¿Quiénes somos?</h1>
             <div class="row">
                 <div class="col">
